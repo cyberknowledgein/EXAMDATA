@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cyber Knowledge | Result Declaration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <img src="logo.png" alt="Cyber Knowledge Logo" class="logo">
+  <div>
+    <h1>Cyber Knowledge</h1>
+    <p>Learn, Protect, Lead the Digital India.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card">
+
+    <h2>Result Declaration Portal</h2>
+    <p class="subtitle">
+      <strong>Cybercrime Awareness & Digital Safety Program<br>
+      Classes IX – XI</strong> of JNV, Angul
+    </p>
+
+    <div class="notice">
+      This result is officially declared by <strong>Cyber Knowledge</strong>.
+      Students are advised to verify their details carefully.
+    </div>
+    <div class="notice">
+      <strong>Note:</strong> Certificates will be issued only to students who successfully pass the examination by securing a minimum of <strong>50% marks</strong>, as per certification eligibility criteria.
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Enter Student Name or Mobile Number">
+      <button onclick="searchResult()">Search Result</button>
+    </div>
+
+    <div id="resultBox" class="result hidden">
+      <h3>Student Result</h3>
+
+      <table>
+        <tr><td>Name</td><td id="rName"></td></tr>
+        <tr><td>Mobile</td><td id="rMobile"></td></tr>
+        <tr><td>Class</td><td id="rClass"></td></tr>
+        <tr><td>Percentage</td><td id="rPercentage"></td></tr>
+        <tr>
+          <td>Status</td>
+          <td id="rStatus" class="status"></td>
+        </tr>
+        <tr><td>Remarks</td><td id="rRemarks"></td></tr>
+      </table>
+
+      <button class="print-btn" onclick="window.print()">🖨 Print Result</button>
+    </div>
+
+    <p id="notFound" class="error hidden">
+      ❌ No record found. Please check your details.
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  © Cyber Knowledge | Official Result Portal<br>
+  This document is system generated.
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
